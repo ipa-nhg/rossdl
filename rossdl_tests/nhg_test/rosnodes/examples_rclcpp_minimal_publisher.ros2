@@ -1,0 +1,14 @@
+---
+nhg_test2:
+  fromGitRepo: "https://github.com/ros2/examples"
+  artifacts:
+    publisher_lambda:
+      node: "publisher_lambda"
+      publishers:
+        topic:
+          type: "std_msgs/msg/String"
+    subscriber_lambda:
+      node: "subscriber_lambda"
+      subscribers:
+        topic:
+          type: "std_msgs/msg/String"
