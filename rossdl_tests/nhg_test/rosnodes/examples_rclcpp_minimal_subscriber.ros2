@@ -1,0 +1,8 @@
+examples_rclcpp_minimal_subscriber:
+  fromGitRepo: "https://github.com/ros2/examples"
+  artifacts:
+    subscriber_lambda:
+      node: subscriber_lambda
+      subscribers:
+        topic:
+          type: "std_msgs/msg/String"
