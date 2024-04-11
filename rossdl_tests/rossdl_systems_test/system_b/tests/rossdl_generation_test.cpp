@@ -29,7 +29,7 @@ TEST(rossdl_generation_test, consumer_unit)
 
   auto topics = consumer->get_topic_names_and_types();
 
-  ASSERT_EQ(topics.size(), 5u);
+  ASSERT_EQ(topics.size(), 8u);
   ASSERT_NE(topics.find("/consumer/description_in"), topics.end());
   ASSERT_NE(topics.find("/consumer/image_in"), topics.end());
   ASSERT_NE(topics.find("/consumer/image_out"), topics.end());
