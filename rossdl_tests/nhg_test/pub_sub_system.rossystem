@@ -1,0 +1,14 @@
+nhg_test:
+  systems:
+    system:
+      nodes:
+        publisher_component:
+          from: "examples_rclcpp_minimal_publisher.publisher_lambda"
+          interfaces:
+          -publisher: pub-> "publisher_lambda::topic"
+        subscriber_component:
+          from: "examples_rclcpp_minimal_subscriber.subscriber_lambda"
+          interfaces:
+          -subscriber: sub-> "subscriber_lambda::topic"
+      connections:
+      -[publisher, subscriber]
