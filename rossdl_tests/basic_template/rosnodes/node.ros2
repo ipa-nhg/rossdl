@@ -1,0 +1,14 @@
+basic_template:
+  artifacts: 
+    image_filter:
+     node: image_filter
+     publishers:
+       image_out:
+         type: "sensor_msgs/msg/Image"
+       description_out:
+         type: "std_msgs/msg/String"
+     subscribers:
+       image_in:
+         type: "sensor_msgs/msg/Image"
+       laser_in:
+         type: "sensor_msgs/msg/LaserScan"
